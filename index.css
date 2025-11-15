@@ -1,0 +1,514 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    width:100%;
+    background-color: chocolate;
+    color: white;
+    border: 5px double white;
+    border-radius: 20px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: start;
+}
+nav h1{
+    font-family: cursive;
+    color: orange;
+    animation: head 2s infinite;
+    position: relative;
+}
+@keyframes head {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.subnav{
+    height: 80px;
+    width:400px; 
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.subnav a{
+    text-decoration: none;
+    color: white;
+    animation: ank 2s infinite;
+    position: relative;
+}
+.subnav a:hover{
+    color: brown;
+    scale: 1.1;
+}
+@keyframes ank {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
+/*---------------------------------------------- HOME PAGE--------------------------------------- */
+.home{
+    margin-top: 90px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSub-Z-6i79X070AB4pZXZJ9Z9s0LVQQ6hJJg&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+}
+.section1{
+    display: flex;
+    gap: 20px;
+}
+.offer1{
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+    animation: off 4s infinite forwards ease;
+    position: relative;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.offer1 button{
+    background-color: chocolate;
+    color: white;
+    padding: 15px;
+    border: 2px solid chocolate;
+    border-radius: 20px;
+}
+.offer1 button:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.offer2{
+    width: fit-content;
+    padding: 30px;
+    animation: off 4s infinite forwards ease;
+    position: relative;
+    color: black;
+    font-size: 1.5rem;
+}
+.offer2 i{
+    font-size: 2rem;
+    color: brown;
+}
+.offer3{
+    width: fit-content;
+    padding: 40px;
+    animation: off 4s infinite forwards ease;
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+.offer3 h1{
+    color:white;
+}
+.offer3 i{
+    font-size: 2rem;
+    color: white;
+}
+@keyframes off {
+    0%{
+        border: none;
+    }
+    25%{
+        border-top:10px double black ;
+    }
+    50%{
+        border-top:10px double black;
+        border-right:10px double black ;
+    }
+    75%{
+        border-top: 10px double black;
+        border-right:10px double black ;
+        border-bottom:10px double black ;
+    }
+    100%{
+        border-top: 10px double black;
+        border-right:10px double black ;
+        border-bottom:10px double black;
+        border-left:10px double black ;
+        box-shadow: 0px 0px 20px 0px black;
+    }
+}
+
+/* ----------------------------------------------service page ------------------------------------- */
+
+.service{
+    padding: 50px;
+}
+.service h1{
+    margin-top: 30px;
+    background-color: brown;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.section2{
+    float: left;
+    padding: 20px;
+}
+ .section2 .aside{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    margin-left: 100px;
+   
+ }
+ .aside img{
+    height: 250px;
+    width: 250px;
+    box-shadow: 0px 0px 10px 0px black;
+    animation: img 5s ease;
+    position: relative;
+    animation-timeline: view();
+ }
+ @keyframes img {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+ }
+ .aside img:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 30px 0px black;
+
+ }
+ .section3{
+    height: 100vh;
+    width: 100%;
+    overflow: visible;
+    overflow-x: hidden;
+ }
+ .card{
+    width: 100%;
+    padding: 20px;
+ }
+  .pic img {
+    height: 20%;
+    width: 30%;
+    box-shadow: 0px 0px 10px 0px black;
+ }
+ .pic img:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 20px 0px black;
+ }
+ .card button{
+    background-color: brown;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: 2px solid brown;
+    border-radius: 20px;
+    margin-bottom: 10px;
+ }
+ .card button:hover{
+    background-color: green;
+    box-shadow: 0px 0px 10px 0px black;
+ }
+
+ .section4{
+    margin-top: 20px;
+    width: 100%;
+    padding: 30px;
+ }
+ .maintenance{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin-left: 80px;
+    margin-top: 30px;
+ }
+ .maintenance img{
+    height: 70%;
+    width: 50%;
+    box-shadow: 0px 0px 10px 0px black;
+    animation: img 5s ease;
+    position: relative;
+    animation-timeline: view();
+ }
+ /* ---------------------------------------------------About page------------------------------ */
+.about{
+    padding: 10px;
+}
+.box1 {
+    display: flex;
+    animation: box 3s;
+    position: relative;
+    animation-timeline: view();
+}
+.box2{
+    animation: boat 3s;
+    position: relative;
+    animation-timeline: view();
+}
+@keyframes box {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes boat {
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 0%;
+    }
+}
+.box1 .image img{
+    width: 80%;
+    height: 100%;
+}
+ .box2 .image img{
+    width: 80%;
+    height: 50%;
+    margin-left: 80px;
+}
+.box2 .image{
+    float: right;
+}
+ h4{
+    color: brown;
+}
+
+/*---------------------------------------- conatct page ----------------------------------*/
+.contact{
+    padding: 10px;
+}
+.form{
+    width: 50%;
+    background-color: chocolate;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px;
+    margin-left: 300px;
+}
+.form input{
+    margin-top: 10px;
+    width: 90%;
+}
+textarea{
+    margin-top: 10px;
+    width: 90%;
+    height: 100px;
+}
+.form button{
+    padding: 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid brown;
+}
+.form button:hover{
+    background-color: green;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+/* ---------------------------------------------------RESPONSIVE------------------------------------------------------ */
+@media only screen and (min-width:300px) and (max-width:550px)  {
+    .subnav{
+        margin-left: 100px;
+        color: black;
+        align-items: center;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        margin-left: 0px;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* -----------------------------HOME PAGE----------------------- */
+    .home{
+        margin-top: 35%;
+        height: 100vh;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .offer1{
+        padding: 0px;
+        font-size: 1rem;
+    }
+    .offer1 button{
+        padding: 0px;
+        height: 30px;
+        width: 120;
+    }
+    .offer2{
+        padding: 0px;
+        font-size: 1rem;
+    }
+    .offer3{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        font-size: 1rem;
+        margin-top: 0px;
+    }
+    /*------------- service page ----------------*/
+    .service{
+        padding: 0px;
+    }
+    .aside img{
+        height: 80px;
+        width: 80px;
+    }
+     .section2 .aside{
+        gap: 5px;
+        margin-left: 0px;
+    }
+    .card{
+        width: 100%;
+    }
+    .pic img{
+        height: 30%;
+        width: 50%;
+    }
+    .section4{
+        padding: 0px;
+    }
+    .maintenance{
+        grid-template-columns: auto;
+        margin-left: 10px;
+    }
+    /*------------------------------------------- about ----------------------------------------------*/
+    .about{
+        padding: 0px;
+    }
+    .box1{
+        flex-direction: column;
+    }
+    .box2 .image img{
+        float: left;
+        margin-left: 0px;
+    }
+    .image{
+        width: 100%;
+    }
+    /*---------------------------- contact page ----------------------------*/
+    .contact{
+        padding: 0px;
+    }
+    .form{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+@media only screen and (min-width:550px) and (max-width:800px)  {
+    .subnav{
+        margin-left: 100px;
+        color: black;
+        align-items: center;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        margin-left: 0px;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* -----------------------------HOME PAGE----------------------- */
+    .home{
+        margin-top: 15%;
+        height: 100vh;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .offer1{
+        padding: 5px;
+    }
+    .offer1 button{
+        padding: 5px;
+    }
+    .offer2{
+        padding: 5px;
+    }
+    .offer3{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding: 5px;
+    }
+    /*--------------------------- service page ----------------------------------------*/
+    .service{
+        padding:0px;
+    }
+    .service h1{
+        font-size: 1.5rem;
+    }
+    .section2{
+        margin-left: 0px;
+    }
+    .section2 .aside{
+        gap: 5px;
+    }
+    .aside img{
+        height: 100px;
+        width: 100px;
+    }
+    .card{
+        width: 100%;
+    }
+    .pic img{
+        width: 50%;
+        height: 30%;
+    }
+    .section4{
+        padding: 0px;
+    }
+    .maintenance{
+        grid-template-columns: auto;
+        margin-left: 0px;
+    }
+    /*-------------------------------- about -----------------------------------*/
+    .about{
+        padding: 0px;
+    }
+    .box1{
+        flex-direction: column;
+    }
+    .box2 .image img{
+        float: left;
+        margin-left: 0px;
+    }
+    .image{
+        width: 100%;
+    }
+    /*----------------------------------- conatact ------------------------------------------*/
+    .contact{
+        padding: 0px;
+    }
+    .form{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
